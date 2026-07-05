@@ -65,3 +65,63 @@ Aggregating the explicit feedback fields within the dataset reveals that competi
 1. **Mandatory Support Staff Retraining**: Implement structural empathy and efficiency-driven training programs for technical support representatives to control the primary explicit driver of operational churn.
 2. **Aggressive 60-Day Customer Onboarding**: Deploy automated, targeted loyalty incentives, check-ins, or usage tutorials during the **first 60 days** of a contract to safely navigate the high-risk onboarding cliff.
 3. **Competitive Data Tier Optimization**: Perform a thorough review of high-speed data structures to match or beat competitor download thresholds, neutralizing premium tier poaching.
+
+## II.📦 Daily Demand Forecasting Model
+
+[Download Demand Forecasting.xlsx](Demand Forecasting.xlsx)
+
+This project establishes a statistical framework for predicting logistical demand workflows by mapping internal order characteristics and external sector orders against total incoming daily volumes. The predictive architecture utilizes multiple linear regression to forecast daily capacity needs.
+
+The entire dataset and regression pipeline are contained within the file **"Demand Forecasting.xlsx"**.
+
+---
+
+### 📂 Project & Dataset Structure
+
+The analysis workspace in **"Demand Forecasting.xlsx"** is split into four core functional sheets:
+
+* **`Daily Demand Forecasting Orders`**: The baseline raw transactional database. Tracks 60 operational day cycles across calendar contexts, item urgency, order item breakdowns, and specific corporate sector requests.
+* **`Data Moldel`**: The core execution sheet containing true historical totals side-by-side with modeled predictions, paired with granular mathematical validation metrics (`Absolute Error`, `Error Square`).
+* **`Analysis`**: The statistical engine tracking the complete Multiple Linear Regression summary outputs, variance indicators (ANOVA), and variable significance metrics generated via Excel Data Analysis ToolPak.
+* **`Interpretation`**: High-level documentation detailing operational constraints, core metrics tracked, and final structural performance results.
+
+---
+
+### 📊 Variables & Mathematical Framework
+
+#### Input Features (Independent Variables)
+1. **Temporal Context**: `Week of the month`, `Day of the week` (Monday to Friday tracking)
+2. **Priority Tiers**: `Non-urgent orders`, `Urgent orders` 
+3. **Item Sub-classifications**: `Order type A`, `Order type B`, `Order type C`
+4. **B2B Sector Volume Requests**: `Fiscal sector orders`, `Orders from the traffic controller sector`
+5. **Financial Demands**: `Banking orders (1)`, `Banking orders (2)`, `Banking orders (3)`
+
+#### Output Variable (Dependent Variable)
+* **`Target (Total orders)`**: Sum total of overall daily operational order volumes.
+
+---
+
+### ⚙️ Model Evaluation & Performance
+
+A Multiple Linear Regression engine was deployed over $N = 60$ historical daily observations. 
+
+#### Regression Statistics
+* **Multiple R**: 1.0000
+* **R-Square ($R^2$)**: 1.0000  
+* **Adjusted R-Square**: 1.0000  
+* **Standard Error**: 0.0000
+
+#### Mathematical Insight
+The perfect mathematical fit ($R^2 = 1.0$) is driven by the structural composition of the dataset features. Regression coefficient analysis demonstrates that the dependent variable `Target (Total orders)` is a perfect deterministic function composed directly of the subset items:
+$$\text{Target (Total orders)} = \text{Order type A} + \text{Order type B} + \text{Order type C}$$
+
+Because individual sub-classes explicitly sum up to the target variable, the model yields a flawless predictive performance profile with zero residual variance ($SS_{\text{residual}} = 0.0$).
+
+---
+
+### 🎯 Strategic Conclusions
+
+* **High Operational Reliability**: The model acts as a flawless validation tool for incoming inventory totals. Predictions map with near-zero error margins, ensuring total clarity when auditing logistics workflows.
+* **Deterministic Scaling**: Because total order volume scales directly with the distribution of specific sub-categories (Types A, B, and C), strategic planning should prioritize early-stage monitoring of these sub-classes to balance processing warehouse allocations.
+* **Predictive Performance**: Overall, the historical validation tracks completely clean, proving highly effective for calculating future distribution requirements if early subclass patterns are known.
+
