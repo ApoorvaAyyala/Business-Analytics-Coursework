@@ -2,7 +2,7 @@
 As a part of Mtech Coursework, I have performed the following analysis during 4 months of the lab practicals we had
 ## I. 📊 Telco Customer Churn Prediction & Analysis
 
-[Download Customer Churn Prediction.xlsx](Customer Churn Prediction.xlsx)
+[Download Customer Churn Prediction.xlsx](https://github.com/ApoorvaAyyala/Business-Analytics-Coursework/blob/main/Customer%20Churn%20Prediction.xlsx)
 
 An end-to-end data analysis and machine learning project focused on identifying the driving factors behind telecom customer churn and validating a predictive risk model. This repository contains the data transformations, evaluation metrics, and core business findings derived from historical subscriber lifecycles.
 
@@ -68,7 +68,7 @@ Aggregating the explicit feedback fields within the dataset reveals that competi
 
 ## II.📦 Daily Demand Forecasting Model
 
-[Download Demand Forecasting.xlsx](Demand Forecasting.xlsx)
+[Download Demand Forecasting.xlsx](https://github.com/ApoorvaAyyala/Business-Analytics-Coursework/blob/main/Demand%20Forecasting.xlsx)
 
 This project establishes a statistical framework for predicting logistical demand workflows by mapping internal order characteristics and external sector orders against total incoming daily volumes. The predictive architecture utilizes multiple linear regression to forecast daily capacity needs.
 
