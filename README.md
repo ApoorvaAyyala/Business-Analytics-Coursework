@@ -125,3 +125,57 @@ Because individual sub-classes explicitly sum up to the target variable, the mod
 * **Deterministic Scaling**: Because total order volume scales directly with the distribution of specific sub-categories (Types A, B, and C), strategic planning should prioritize early-stage monitoring of these sub-classes to balance processing warehouse allocations.
 * **Predictive Performance**: Overall, the historical validation tracks completely clean, proving highly effective for calculating future distribution requirements if early subclass patterns are known.
 
+
+## III. 👥 HR Employee Attrition & Descriptive Analytics
+
+[Download HR Employee Data 1.xlsx](https://github.com/ApoorvaAyyala/Business-Analytics-Coursework/blob/main/HR%20Employee%20Data%201.xlsx)
+
+This repository houses an end-to-end human resources descriptive analytics study designed to benchmark internal workplace health. By evaluating core metrics such as workload distributions, employee sentiment scores, and historical attrition patterns, this project uncovers actionable workforce management insights.
+
+The data models and summary metrics are contained entirely within the master file **"HR Employee Data 1.xlsx"**.
+
+---
+
+### 📂 Project Structure
+
+The operational workbook **"HR Employee Data 1.xlsx"** is organized into two primary analytics spaces:
+
+* **`HR_Employee_Data` (Baseline Population)**: The production master list tracking 14,999 active and historical employee IDs (`Emp_Id`). Key performance metrics mapped include project allocation density (`number_project`), working hour behaviors (`average_montly_hours`), organization maturity (`time_spend_company`), accident logs (`Work_accident`), promotions (`promotion_last_5years`), department classifications, compensation tiers (`salary`), and retention state (`left`).
+* **`Descrptive_Analysis` (Statistical Modeling)**: A dedicated computation sheet hosting the formal application of descriptive statistical metrics focused purely on workforce sentiment parameters (`satisfaction_level`).
+
+---
+
+### 📊 Methodology & Descriptive Analytics Insights
+
+A detailed descriptive analysis was run over the entire organization ($N = 14,999$) to chart employee satisfaction metrics using the statistical engine:
+
+#### Summary Statistics Breakdown
+| Metric | Calculated Value | Analytics Function & Intent |
+| :--- | :---: | :--- |
+| **Mean** | `0.6128` | Measures central tendency; maps average workforce satisfaction. |
+| **Median** | `0.6400` | Pinpoints the middle data baseline, minimizing extreme outlier bias. |
+| **Mode** | `0.1000` | Reflects the most frequent standalone score recurring across the company. |
+| **Standard Deviation** | `0.2486` | Measures distribution variation and consistency around the baseline mean. |
+| **Sample Variance** | `0.0618` | Measures operational dispersion levels of customer/staff satisfaction. |
+| **Skewness** | `-0.4764` | Analyzes distribution shape symmetry. |
+| **Kurtosis** | `-0.6709` | Analyzes peak steepness/tail weight of the underlying data curve. |
+| **Range** | `0.9100` | Identifies the span between minimum (`0.09`) and maximum (`1.00`) profiles. |
+
+---
+
+### 🎯 Key Findings & Statistical Conclusions
+
+#### 💡 Core Conclusions
+* **Generally Positive Sentiment With Pockets of Risk**: The average satisfaction level across the company sits at approximately **0.61**, which signals a moderately healthy environment overall. 
+* **Distribution Skewness**: The negative skewness score (`-0.4764`) proves that the overall curve leans towards higher satisfaction scores; more employees report higher job sentiment overall.
+* **The Attrition Divide**: While the organizational skew is positive, the variance ($0.25$ standard deviation) highlights a prominent subset of highly unsatisfied employees. Cross-referencing retention features indicates that employees who ultimately departed the company (`left = 1`) had a significantly lower average satisfaction level of **0.44** compared to retained peers at **0.67**.
+* **High-Frequency Dissatisfaction Risk**: The data distribution exposes an alarming mode score of **0.10** (the absolute absolute minimum baseline). This alerts HR teams to a substantial cluster of severely disconnected personnel requiring immediate organizational intervention.
+
+---
+
+### 🚀 Recommended HR Initiatives
+
+1. **Targeted Red-Zone Interventions**: Deploy focused feedback loops or automated surveys for department clusters showing satisfaction trends slipping toward the baseline mode profile ($0.10$).
+2. **Predictive Churn Risk Guardrails**: Build an early-warning system flag for employees whose satisfaction metric dips underneath the historical turnover threshold average ($< 0.45$).
+3. **Workload Equitability Audits**: Cross-reference the underlying satisfaction variances against project loads (`number_project`) and heavy monthly hours (`average_montly_hours`) to isolate localized operational burnout.
+
